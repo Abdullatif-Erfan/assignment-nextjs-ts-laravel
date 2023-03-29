@@ -29,7 +29,7 @@ const dashboard: React.FC<propType> = ({ }) => {
     return (
         <Flex
             h={[null, null, "100vh"]}
-            maxW="2000px"
+            w="50%"
             flexDir={["column", "column", "row"]}
             overflow="hidden">
 

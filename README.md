@@ -43,4 +43,4 @@ Install all the dependencies using yarn or npm, suppose you are using npm run th
 - `npm run dev` — Starts the application in development mode at `http://localhost:3000`.
 
 ## Live Demo
-- [online](assignment-nextjs-ts-laravel.vercel.app)
+- [online](https://assignment-nextjs-ts-laravel.vercel.app/)

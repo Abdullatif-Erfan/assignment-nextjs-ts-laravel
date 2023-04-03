@@ -18,11 +18,6 @@ export const StudentAddForm: NextPage<PropType> = () => {
     const [preview, setPreview] = useState();
     const [file, setFile] = useState<File>();
     const router = useRouter();
-    // const [values, setValues] = useState({
-    //     email: '',
-    //     password: '',
-    //     image: '',
-    // })
 
     const handleFileUpload = (e: ChangeEvent<HTMLInputElement>) => {
         if (e.target.files[0]) {
@@ -57,7 +52,7 @@ export const StudentAddForm: NextPage<PropType> = () => {
     // create a preview as a side effect, whenever selected file is changed
     useEffect(() => {
         if (!file) {
-            setPreview(undefined)
+            setPreview('')
             return
         }
         const objectUrl = URL.createObjectURL(file)

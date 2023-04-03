@@ -156,7 +156,7 @@ export const ImageCropper = () => {
                     </Button>
                 </div>
                 {!!imgSrc && (
-                    <Flex alignItem="center" justifyContent="center" mb={10}>
+                    <Flex alignItems="center" justifyContent="center" mb={10}>
                         <ReactCrop
                             crop={crop}
                             onChange={(_, percentCrop) => setCrop(percentCrop)}
@@ -175,7 +175,7 @@ export const ImageCropper = () => {
                 )}
                 {!!completedCrop && (
                     <>
-                        <Flex bg="#ddd" alignItem="center" justifyContent="center" p="20px">
+                        <Flex bg="#ddd" alignItems="center" justifyContent="center" p="20px">
                             <canvas
                                 ref={previewCanvasRef}
                                 style={{

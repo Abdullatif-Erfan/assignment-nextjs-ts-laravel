@@ -1,0 +1,80 @@
+.sidebarIcon {
+    display: inline;
+    margin-right: 10px;
+    color: #555;
+}
+
+.hiddenXs {
+    display: inline;
+}
+
+.insertButton {
+    background-color: #f0f0f0 !important
+}
+
+.studentTable {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.studentTable td,
+.studentTable th {
+    padding: 0
+}
+
+.studentTable>tbody>tr>td,
+.studentTable>tbody>tr>th,
+.studentTable>tfoot>tr>td,
+.studentTable>tfoot>tr>th,
+.studentTable>thead>tr>td,
+.studentTable>thead>tr>th {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+    text-align: left;
+}
+
+.studentTable>thead>tr>th {
+    vertical-align: center;
+    border: 1px solid #ddd;
+    background-color: #f0f0f0;
+}
+
+.studentTable>tbody>tr>td {
+    vertical-align: center;
+    border: 1px solid #ddd
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+
+
+/* @media (max-width: 576px) { */
+
+@media (max-width: 642px) {
+    .hiddenXs {
+        display: none;
+    }
+    .listItem {
+        text-align: center;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (max-width: 768px) {}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (max-width: 992px) {}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (max-width: 1200px) {}

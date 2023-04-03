@@ -1,39 +1,49 @@
-# Example app with [chakra-ui](https://github.com/chakra-ui/chakra-ui) and TypeScript
+# Assignment app with Next.js, [chakra-ui](https://github.com/chakra-ui/chakra-ui) and TypeScript
 
-This example features how to use [chakra-ui](https://github.com/chakra-ui/chakra-ui) as the component library within a Next.js app with TypeScript.
+I have developed a simple web application that displays a list of students (fetch from [online](https://pmisndc.gov.af/erfan_websites/laravel_api/student_list) rest api). 
 
-Next.js and chakra-ui have built-in TypeScript declarations, so we'll get autocompletion for their modules straight away.
+Topics covered in this Application:
 
-We are connecting the Next.js `_app.js` with `chakra-ui`'s Provider and theme so the pages can have app-wide dark/light mode. We are also creating some components which shows the usage of `chakra-ui`'s style props.
+- Show students list.
+- Add new student.
+- Delete student record.
+- Update student record.
 
-## Deploy your own
+Topics that will be covered in future examples:
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-chakra-ui)
+- Authentication.
+- SSR or SSG.
+- Server side pagniation.
+- React Query.
+- .....
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-chakra-ui&project-name=with-chakra-ui&repository-name=with-chakra-ui)
 
-## How to use
+## Getting started 
 
-### Using `create-next-app`
+Create a repository and name it 
+    
+    assignment_nextjs_ts_laravel
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+Create a sub repository and name it 
+    
+    client
 
-```bash
-npx create-next-app --example with-chakra-ui with-chakra-ui-app
-```
+Switch to the repo folder
 
-```bash
-yarn create next-app --example with-chakra-ui with-chakra-ui-app
-```
+    cd assignment_nextjs_ts_laravel\client
 
-```bash
-pnpm create next-app --example with-chakra-ui with-chakra-ui-app
-```
+Clone the repository
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+    git clone git@github.com:Abdullatif-Erfan/assignment-nextjs-ts-laravel.git
 
-## Notes
+Install all the dependencies using composer
 
-Chakra has supported Gradients and RTL in `v1.1`. To utilize RTL, [add RTL direction and swap](https://chakra-ui.com/docs/features/rtl-support).
+    ```bash
+    npm install
+    ```
 
-If you don't have multi-direction app, you should make `<Html lang="ar" dir="rtl">` inside `_document.ts`.
+- `npm run build` — Creates an optimized production build of your application.
+- `npm run dev` — Starts the application in development mode at `http://localhost:3000`.
+
+## Live Demo
+- [link](assignment-nextjs-ts-laravel.vercel.app)

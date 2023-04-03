@@ -21,7 +21,7 @@ export const StudentEditForm: NextPage<PropType> = ({ studentId }: { studentId: 
     const { register, handleSubmit, formState: { errors }, setValue } = useForm();
 
     const [uploading, setUploading] = useState<boolean>(false);
-    const [preview, setPreview] = useState<string | any>();
+    const [preview, setPreview] = useState();
     const [file, setFile] = useState<File>();
     const router = useRouter();
 
@@ -76,7 +76,7 @@ export const StudentEditForm: NextPage<PropType> = ({ studentId }: { studentId: 
     // create a preview as a side effect, whenever selected file is changed
     useEffect(() => {
         if (!file) {
-            // setPreview(undefined)
+            setPreview(undefined)
             return
         }
         const objectUrl = URL.createObjectURL(file)

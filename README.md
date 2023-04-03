@@ -14,7 +14,8 @@ Topics that will be covered in future examples:
 - Authentication.
 - SSR or SSG.
 - Server side pagniation.
-- React Query.
+- use useRef hook instead of useState hook
+- use React Query in client side to remove all useState hooks which causes re-rendering.
 - .....
 
 

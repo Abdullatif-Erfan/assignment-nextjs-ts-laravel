@@ -15,7 +15,7 @@ interface formDataType {
 interface PropType { }
 export const StudentAddForm: NextPage<PropType> = () => {
     const [uploading, setUploading] = useState<boolean>(false);
-    const [preview, setPreview] = useState<string | any>();
+    const [preview, setPreview] = useState();
     const [file, setFile] = useState<File>();
     const router = useRouter();
 
@@ -52,7 +52,7 @@ export const StudentAddForm: NextPage<PropType> = () => {
     // create a preview as a side effect, whenever selected file is changed
     useEffect(() => {
         if (!file) {
-            // setPreview('')
+            setPreview(undefined)
             return
         }
         const objectUrl = URL.createObjectURL(file)

@@ -76,7 +76,7 @@ export const StudentEditForm: NextPage<PropType> = ({ studentId }: { studentId: 
     // create a preview as a side effect, whenever selected file is changed
     useEffect(() => {
         if (!file) {
-            setPreview(undefined)
+            // setPreview(undefined)
             return
         }
         const objectUrl = URL.createObjectURL(file)

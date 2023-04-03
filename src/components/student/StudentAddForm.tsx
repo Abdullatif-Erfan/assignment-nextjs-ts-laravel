@@ -52,7 +52,7 @@ export const StudentAddForm: NextPage<PropType> = () => {
     // create a preview as a side effect, whenever selected file is changed
     useEffect(() => {
         if (!file) {
-            setPreview('')
+            // setPreview('')
             return
         }
         const objectUrl = URL.createObjectURL(file)

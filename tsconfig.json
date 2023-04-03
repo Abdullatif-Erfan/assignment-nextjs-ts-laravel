@@ -22,7 +22,11 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    "src/firebase.jsx",
+    "src/components/cropImage.jsx",
+    "src/hooks/useFetch.jsx",
+    "src/pages/index.jsx"
   ],
   "exclude": [
     "node_modules"

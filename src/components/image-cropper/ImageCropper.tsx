@@ -11,7 +11,7 @@ import { canvasPreview } from './canvasPreview'
 import { useDebounceEffect } from './useDeboundEffect'
 
 import 'react-image-crop/dist/ReactCrop.css'
-import { FormControl, FormLabel } from '@material-ui/core';
+import { FormControl, FormLabel } from '@chakra-ui/react';
 
 // This is to demonstate how to make and center a % aspect crop
 // which is a bit trickier so we use some helper functions.
@@ -124,29 +124,32 @@ export const ImageCropper = () => {
                     <Input type="file" accept="image/*" onChange={onSelectFile} mb="20px" />
                 </FormControl>
 
-                <FormControl>
-                    <FormLabel>Scale: </FormLabel>
-                    <Input
-                        type="number"
-                        step="0.1"
-                        value={scale}
-                        disabled={!imgSrc}
-                        onChange={(e) => setScale(Number(e.target.value))}
-                        mb="20px"
-                    />
-                </FormControl>
-                <FormControl >
-                    <FormLabel ml="20px">Rotate: </FormLabel>
-                    <Input
-                        type="number"
-                        value={rotate}
-                        disabled={!imgSrc}
-                        onChange={(e) =>
-                            setRotate(Math.min(180, Math.max(-180, Number(e.target.value))))
-                        }
-                        ml="10px"
-                    />
-                </FormControl>
+                <Flex>
+                    <FormControl>
+                        <FormLabel>Scale: </FormLabel>
+                        <Input
+                            type="number"
+                            step="0.1"
+                            value={scale}
+                            disabled={!imgSrc}
+                            onChange={(e) => setScale(Number(e.target.value))}
+                            mb="20px"
+                        />
+                    </FormControl>
+                    <FormControl >
+                        <FormLabel ml="20px">Rotate: </FormLabel>
+                        <Input
+                            type="number"
+                            value={rotate}
+                            disabled={!imgSrc}
+                            onChange={(e) =>
+                                setRotate(Math.min(180, Math.max(-180, Number(e.target.value))))
+                            }
+                            ml="10px"
+                        />
+                    </FormControl>
+                </Flex>
+
                 <div>
                     <Button colorScheme='teal' mb={5} onClick={handleToggleAspectClick}>
                         Toggle aspect {aspect ? 'off' : 'on'}

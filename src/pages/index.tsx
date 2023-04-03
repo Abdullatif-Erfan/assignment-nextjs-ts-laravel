@@ -11,8 +11,8 @@ const Home: NextPage<propType> = () => {
     <SimpleGrid bg="#f9f9f9" minH="100vh">
       <Head>
         <title>Index Page</title>
-        <meta name="description" content="Keywords about this page" />
-        <link rel="icon" href="/favicon.ico" />
+        <meta name="keyword" content="Keywords about this page" />
+        <meta name="Developer" content="Abdul Latif Erfan" />
       </Head>
       <Header />
       {/* Content  */}

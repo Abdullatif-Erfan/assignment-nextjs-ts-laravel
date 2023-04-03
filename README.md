@@ -5,7 +5,7 @@ I have developed a simple web application that displays a list of students (fetc
 Topics covered in this Application:
 
 - Show students list.
-- Add new student.
+- Add new student. 
 - Delete student record.
 - Update student record.
 
@@ -36,14 +36,11 @@ Clone the repository
 
     git clone git@github.com:Abdullatif-Erfan/assignment-nextjs-ts-laravel.git
 
-Install all the dependencies using composer
+Install all the dependencies using yarn or npm, suppose you are using npm run the following commands:
 
-    ```bash
-    npm install
-    ```
-
+- `npm install`
 - `npm run build` — Creates an optimized production build of your application.
 - `npm run dev` — Starts the application in development mode at `http://localhost:3000`.
 
 ## Live Demo
-- [link](assignment-nextjs-ts-laravel.vercel.app)
+- [online](assignment-nextjs-ts-laravel.vercel.app)

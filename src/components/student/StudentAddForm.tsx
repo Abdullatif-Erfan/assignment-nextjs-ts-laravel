@@ -15,7 +15,7 @@ interface formDataType {
 interface PropType { }
 export const StudentAddForm: NextPage<PropType> = () => {
     const [uploading, setUploading] = useState<boolean>(false);
-    const [preview, setPreview] = useState();
+    const [preview, setPreview] = useState<string | any>();
     const [file, setFile] = useState<File>();
     const router = useRouter();
 

@@ -65,10 +65,11 @@ export const StudentAddForm: NextPage<PropType> = () => {
         <>
             <Box>
                 <Text pl={5} pt={5} fontSize={20} fontWeight="bold">Guide: </Text>
-                <Text pl={5}>1. Crop the image on the right and download.</Text>
+                <Text pl={5}>1. Upload image on the right side 👉 to crop.</Text>
                 <Text pl={5}>2. Use the arrow keys on the keyboard to increase and decrease (rotate and scale) amount. </Text>
                 <Text pl={5}>3. Check the toggle aspect button for custom cropping.</Text>
-                <Text pl={5}>4. Upload the cropped image and submit the form.</Text>
+                <Text pl={5}>4. Crop the image and download.</Text>
+                <Text pl={5}>5. Upload the cropped image 👇 and submit the form.</Text>
                 <Flex p="30px" gap="20px" >
 
                     <Box w={["50%"]}>
